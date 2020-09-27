@@ -1,0 +1,248 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+/* User-Agent Style */
+html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #202324 #454a4d;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #181a1b;
+   --darkreader-neutral-text: #e8e6e3;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}
+
+/* Modified CSS */
+#page-ctn {
+    color: rgb(206, 202, 195);
+}
+#page-header {
+    background-color: rgb(28, 30, 31);
+    border-color: rgb(60, 65, 67);
+}
+#page-header svg {
+    fill: currentcolor;
+}
+.markdown-body {
+    color: rgb(200, 195, 188);
+    background-color: rgb(24, 26, 27);
+    background-image: none;
+    border-color: rgb(58, 62, 65);
+}
+.markdown-body .table-of-contents ol {
+    list-style-image: none;
+}
+.markdown-body h1 {
+    border-bottom-color: rgb(53, 57, 59);
+}
+.markdown-body h2 {
+    border-bottom-color: rgb(53, 57, 59);
+}
+.markdown-body h6 {
+    color: rgb(157, 148, 136);
+}
+.markdown-body hr {
+    border-color: rgb(53, 57, 59) currentcolor currentcolor;
+}
+.markdown-body blockquote {
+    color: rgb(157, 148, 136);
+    border-left-color: rgb(58, 62, 65);
+}
+.markdown-body table tr {
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(62, 68, 70);
+}
+.markdown-body table tr:nth-child(2n) {
+    background-color: rgb(28, 30, 31);
+}
+.markdown-body table th,
+.markdown-body table td {
+    border-color: rgb(58, 62, 65);
+}
+.markdown-body kbd {
+    color: rgb(183, 177, 168);
+    background-color: rgb(26, 28, 30);
+    border-color: rgb(60, 65, 67);
+    box-shadow: rgb(47, 51, 53) 0px -1px 0px inset;
+}
+.markdown-body pre {
+    background-color: rgb(29, 31, 32);
+}
+.markdown-body pre code {
+    border-color: currentcolor;
+    background-color: transparent;
+}
+.markdown-body code {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.markdown-body a {
+    color: rgb(83, 144, 198);
+    text-decoration-color: currentcolor;
+    background-color: transparent;
+    background-image: none;
+}
+.markdown-body del {
+    text-decoration-color: currentcolor;
+}
+.hljs {
+    color: rgb(200, 195, 188);
+    background-color: rgb(28, 30, 31);
+    background-image: none;
+}
+.hljs-comment,
+.hljs-quote {
+    color: rgb(162, 154, 142);
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: rgb(200, 195, 188);
+}
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: rgb(114, 255, 255);
+}
+.hljs-string,
+.hljs-doctag {
+    color: rgb(239, 53, 100);
+}
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+    color: rgb(255, 97, 97);
+}
+.hljs-type,
+.hljs-class .hljs-title {
+    color: rgb(139, 166, 197);
+}
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+    color: rgb(127, 174, 255);
+}
+.hljs-regexp,
+.hljs-link {
+    color: rgb(97, 255, 136);
+}
+.hljs-symbol,
+.hljs-bullet {
+    color: rgb(255, 97, 216);
+}
+.hljs-built_in,
+.hljs-builtin-name {
+    color: rgb(79, 211, 255);
+}
+.hljs-meta {
+    color: rgb(168, 160, 149);
+}
+.hljs-deletion {
+    background-color: rgb(71, 0, 0);
+    background-image: none;
+}
+.hljs-addition {
+    background-color: rgb(18, 71, 0);
+    background-image: none;
+}
+.katex .katex-mathml {
+    border-color: currentcolor;
+}
+.katex .rule {
+    border-color: currentcolor;
+}
+.katex svg {
+    fill: currentcolor;
+    stroke: currentcolor;
+}
+.katex svg path {
+    stroke: none;
+}
+.katex .fbox,
+.katex .fcolorbox {
+    border-color: currentcolor;
+}
